@@ -1,5 +1,95 @@
-* {
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+*, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: "Public Sans", sans-serif;
+}
+
+nav {
+  background-color: #ffffff;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 1rem;
+}
+nav .ham {
+  width: 13%;
+  cursor: pointer;
+}
+nav .ham .ham img {
+  width: 100%;
+  height: 100%;
+}
+nav .logo {
+  width: 150px;
+}
+nav .logo img {
+  width: 100%;
+  height: 100%;
+}
+nav .phone-navlinks-cover {
+  position: fixed;
+  top: 5%;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(#2d314d, rgba(45, 49, 77, 0), rgba(45, 49, 77, 0.048));
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  transition: 1s all ease-in-out;
+}
+nav .phone-navlinks-cover.show {
+  opacity: 1;
+  visibility: visible;
+}
+nav .navlinks {
+  background-color: #ffffff;
+  width: 86%;
+  border-radius: 6px;
+  padding: 1rem 0.9rem;
+  text-align: center;
+  font-size: 400;
+  margin: 8% auto;
+}
+nav .navlinks .laptopOnly {
+  display: none;
+}
+nav .navlinks li {
+  list-style: none;
+  margin: 9% 0;
+}
+nav .navlinks li a {
+  text-decoration: none;
+  color: #3d3f4c;
+  color: #2d314d;
+  font-size: 1.2rem;
+}
+nav .navlinks.animate_navlinks {
+  animation: Translater 2s;
+}
+
+@keyframes Translater {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.hero-section {
+  border: 1px solid green;
 }

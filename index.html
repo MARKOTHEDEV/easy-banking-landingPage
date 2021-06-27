@@ -15,23 +15,25 @@
                 
                 <!-- website logo -->
                 <div class="logo">
-                    <img src="" alt="">
+                    <img src="./images/logo.svg" alt="">
                 </div>
 
                 <!-- hamburger logo for the mobile view -->
-                <div class="ham"><img src="" alt=""></div>
+                <div class="ham"><img src="./images/icon-hamburger.svg" alt=""></div>
 
 
-                <div class="navlinks">
-                    <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Contact</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Careers</a></li>
-                    </ul>
-
-                    <button class="btn-green-gradient btn nav-btn">Request invite</button>
+                <div class="phone-navlinks-cover">
+                    <div class="navlinks">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="" >Careers</a></li>
+                        </ul>
+    
+                        <button class="laptopOnly btn-green-gradient">Request invite</button>
+                    </div>
                 </div>
         </nav>
         <!-- end of nav -->
@@ -261,5 +263,17 @@
         </footer>
         <!-- end of footer -->
 
+
+        <script>
+            const ham = document.querySelector('.ham')
+            const phoneNavlinksCover = document.querySelector('.phone-navlinks-cover')
+            const navlinks = document.querySelector('.navlinks')
+            ham.addEventListener('click',e=>{
+                e.preventDefault()
+
+                phoneNavlinksCover.classList.toggle('show')
+                navlinks.classList.toggle('animate_navlinks')
+            })
+        </script>
 </body>
 </html>
