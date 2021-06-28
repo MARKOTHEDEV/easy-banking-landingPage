@@ -11,31 +11,33 @@
 
 
         <!-- start of nav -->
+      <div class="nav_container">
         <nav>
                 
-                <!-- website logo -->
-                <div class="logo">
-                    <img src="./images/logo.svg" alt="">
+            <!-- website logo -->
+            <div class="logo">
+                <img src="./images/logo.svg" alt="">
+            </div>
+
+            <!-- hamburger logo for the mobile view -->
+            <div class="ham"><img src="./images/icon-hamburger.svg" alt=""></div>
+
+
+            <div class="phone-navlinks-cover">
+                <div class="navlinks">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="" >Careers</a></li>
+                    </ul>
+
                 </div>
-
-                <!-- hamburger logo for the mobile view -->
-                <div class="ham"><img src="./images/icon-hamburger.svg" alt=""></div>
-
-
-                <div class="phone-navlinks-cover">
-                    <div class="navlinks">
-                        <ul>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">About</a></li>
-                            <li><a href="">Contact</a></li>
-                            <li><a href="">Blog</a></li>
-                            <li><a href="" >Careers</a></li>
-                        </ul>
-    
-                        <button class="laptopOnly btn-green-gradient">Request invite</button>
-                    </div>
-                </div>
-        </nav>
+            </div>
+            <button class="laptopOnly btn-green-gradient">Request invite</button>
+    </nav>
+      </div>
         <!-- end of nav -->
 
         <!-- start of hero-section -->
@@ -274,7 +276,7 @@
                 e.preventDefault()
                 if(hamImage.src.includes('icon-hamburger.svg')){
                  
-                    console.log("yes")
+            
                     hamImage.src = './images/icon-close.svg'
                 }else{hamImage.src = './images/icon-hamburger.svg'}
 

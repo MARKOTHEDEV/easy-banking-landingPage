@@ -12,11 +12,30 @@ body{
     position: relative;
     font-family: 'Public Sans', sans-serif;
 }
+// utitlity classes start
+.btn-green-gradient{
+    display: inline-block;
+    border: transparent;
+    color: hsl(0, 0%, 100%);
+    padding: .8rem 1.9rem;
+    font-size: 1rem;
+    border-radius: 100px;
+    font-weight: 400;
+    cursor: pointer;
+    background: linear-gradient(
+        to right ,hsl(136, 65%, 51%) 10%,
+        hsl(136, 65%, 51%) 9%,
+        hsl(192, 70%, 51%) 70%
+    );
 
+}
+
+
+// utitlity classes end
 // nav bar mobile view style start
 nav{
     background-color: #ffffff;
-    border: 1px solid red;
+    // border: 1px solid red;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -43,7 +62,7 @@ nav{
 
 .phone-navlinks-cover{
     position: fixed;
-    top: 5%;
+    top: 8%;
     left: 0;
     bottom: 0;
     height: 100%;
@@ -80,9 +99,7 @@ nav{
 
 
 
-   .laptopOnly{
-       display: none;
-   }     
+     
       
         & li{
             list-style: none;
@@ -107,6 +124,82 @@ nav{
 }
 
 }
+.laptopOnly{
+    display: none;
+}  
+
+.hero-section{
+    border: 1px solid green;
+}
+
+
+
+
+
+
+@media screen  and (min-width:800px){
+    // nav bar styles start
+    nav{
+        max-width: 1440px;
+        margin: 0 auto;
+    padding: 1.2rem 2rem;
+
+        .ham{
+            display: none;
+        }
+        .phone-navlinks-cover{
+            opacity: 1;
+            visibility: visible;
+            position: static;
+            width: 40%;
+            // border: 1px solid red;
+            background: none;
+        }
+        .navlinks{
+            width: 100%;
+            margin: 0;
+            flex-direction: row;
+            padding: 0;
+            
+            & ul{
+                display: flex;
+                justify-content: space-between;
+            }
+            & li{
+                margin:0;
+            }
+            & li a{
+                color:  #8d8c91;
+                font-size: 1rem;
+    
+            }
+          
+
+
+           
+
+        }
+
+      
+           
+    }
+    .laptopOnly{
+        display: inline-block;
+    }  
+    // nav bar styles end
+}
+@media screen  and (min-width:1000px){
+    nav{
+        padding: 1.2rem 3rem;
+
+    }
+  nav  .phone-navlinks-cover{
+       
+        width: 30%;
+    }
+}
+
+// animations 
 
 //this animation animate the objecct by moving it stylishly
 // and adding it back to it orginal positon
@@ -123,9 +216,4 @@ nav{
         opacity: 1;
         transform: translateX(0);
     }
-}
-// nav bar mobile view style end
-
-.hero-section{
-    border: 1px solid green;
 }

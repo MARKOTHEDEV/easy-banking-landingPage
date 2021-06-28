@@ -10,9 +10,20 @@ body {
   font-family: "Public Sans", sans-serif;
 }
 
+.btn-green-gradient {
+  display: inline-block;
+  border: transparent;
+  color: white;
+  padding: 0.8rem 1.9rem;
+  font-size: 1rem;
+  border-radius: 100px;
+  font-weight: 400;
+  cursor: pointer;
+  background: linear-gradient(to right, #31d35c 10%, #31d35c 9%, #2bb7da 70%);
+}
+
 nav {
   background-color: #ffffff;
-  border: 1px solid red;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -35,7 +46,7 @@ nav .logo img {
 }
 nav .phone-navlinks-cover {
   position: fixed;
-  top: 5%;
+  top: 8%;
   left: 0;
   bottom: 0;
   height: 100%;
@@ -60,9 +71,6 @@ nav .navlinks {
   font-size: 400;
   margin: 8% auto;
 }
-nav .navlinks .laptopOnly {
-  display: none;
-}
 nav .navlinks li {
   list-style: none;
   margin: 9% 0;
@@ -77,6 +85,61 @@ nav .navlinks.animate_navlinks {
   animation: Translater 2s;
 }
 
+.laptopOnly {
+  display: none;
+}
+
+.hero-section {
+  border: 1px solid green;
+}
+
+@media screen and (min-width: 800px) {
+  nav {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 1.2rem 2rem;
+  }
+  nav .ham {
+    display: none;
+  }
+  nav .phone-navlinks-cover {
+    opacity: 1;
+    visibility: visible;
+    position: static;
+    width: 40%;
+    background: none;
+  }
+  nav .navlinks {
+    width: 100%;
+    margin: 0;
+    flex-direction: row;
+    padding: 0;
+  }
+  nav .navlinks ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  nav .navlinks li {
+    margin: 0;
+  }
+  nav .navlinks li a {
+    color: #8d8c91;
+    font-size: 1rem;
+  }
+
+  .laptopOnly {
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 1000px) {
+  nav {
+    padding: 1.2rem 3rem;
+  }
+
+  nav .phone-navlinks-cover {
+    width: 30%;
+  }
+}
 @keyframes Translater {
   0% {
     opacity: 0;
@@ -89,7 +152,4 @@ nav .navlinks.animate_navlinks {
     opacity: 1;
     transform: translateX(0);
   }
-}
-.hero-section {
-  border: 1px solid green;
 }
