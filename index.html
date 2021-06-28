@@ -268,8 +268,15 @@
             const ham = document.querySelector('.ham')
             const phoneNavlinksCover = document.querySelector('.phone-navlinks-cover')
             const navlinks = document.querySelector('.navlinks')
+            //this line of code get the image in the ham div
+            let hamImage = ham.childNodes[0]
             ham.addEventListener('click',e=>{
                 e.preventDefault()
+                if(hamImage.src.includes('icon-hamburger.svg')){
+                 
+                    console.log("yes")
+                    hamImage.src = './images/icon-close.svg'
+                }else{hamImage.src = './images/icon-hamburger.svg'}
 
                 phoneNavlinksCover.classList.toggle('show')
                 navlinks.classList.toggle('animate_navlinks')
