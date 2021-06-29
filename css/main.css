@@ -23,6 +23,7 @@ body {
 }
 
 nav {
+  z-index: 40;
   background-color: #ffffff;
   display: flex;
   align-items: center;
@@ -46,12 +47,12 @@ nav .logo img {
 }
 nav .phone-navlinks-cover {
   position: fixed;
-  top: 8%;
+  top: 7%;
   left: 0;
   bottom: 0;
   height: 100%;
   width: 100%;
-  background: linear-gradient(#2d314d, rgba(45, 49, 77, 0), rgba(45, 49, 77, 0.048));
+  background: linear-gradient(#2d314d, rgba(45, 49, 77, 0.109), rgba(45, 49, 77, 0));
   display: flex;
   flex-direction: column;
   opacity: 0;
@@ -91,6 +92,47 @@ nav .navlinks.animate_navlinks {
 
 .hero-section {
   border: 1px solid green;
+  background-color: #fafafa;
+  z-index: -1;
+  position: relative;
+}
+
+.hero-section__bigPhoneImage_container {
+  z-index: -1;
+  position: relative;
+  height: 328px;
+}
+.hero-section__bigPhoneImage_container .img-bg-for-mobile {
+  width: 100%;
+  height: 100%;
+}
+.hero-section__bigPhoneImage_container .img-bg-for-desktop {
+  display: none;
+}
+.hero-section__bigPhoneImage_container .image_of_phone {
+  position: absolute;
+  top: -39%;
+  left: 0;
+  width: 100%;
+}
+
+.hero-section__content-section {
+  color: #2d314d;
+  text-align: center;
+}
+.hero-section__content-section h1 {
+  font-weight: 200;
+  font-size: 2.5rem;
+  margin-bottom: 1.4rem;
+}
+.hero-section__content-section p {
+  color: #9698a6;
+  margin: 6% 0;
+  padding: 0 1.2rem;
+  line-height: 23px;
+}
+.hero-section__content-section .hero-section__btn {
+  margin: 5% 0;
 }
 
 @media screen and (min-width: 800px) {
