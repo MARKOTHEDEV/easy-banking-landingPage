@@ -40,6 +40,7 @@ body{
 // utitlity classes end
 // nav bar mobile view style start
 nav{
+    position: relative;
     z-index: 40;
     background-color: #ffffff;
     // border: 1px solid red;
@@ -139,18 +140,20 @@ nav{
 .hero-section{
     // border: 1px solid green;
     background-color: #fafafa;
-    z-index: -1;
+    // z-index: -1;
     position: relative;
     margin: 0 auto;
     max-width: 1351px;
 }
 
-.hero-section{
+.herosection_cover{
+    // background-color: #fafafa;
+
 // border: 1px solid rebeccapurple;
 }
 
 .hero-section__bigPhoneImage_container{
-    z-index: -1;
+    z-index: 1;
     position: relative;
     // border: 1px solid red;
     height: 328px;
@@ -194,7 +197,9 @@ nav{
     }
 
     .hero-section__btn{
-        margin: 5% 0;
+        margin: 3% 0;
+    cursor: pointer ;
+       z-index: 90;
     }
 }
 // end of the hero section

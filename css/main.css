@@ -24,6 +24,7 @@ body {
 }
 
 nav {
+  position: relative;
   z-index: 40;
   background-color: #ffffff;
   display: flex;
@@ -93,14 +94,13 @@ nav .navlinks.animate_navlinks {
 
 .hero-section {
   background-color: #fafafa;
-  z-index: -1;
   position: relative;
   margin: 0 auto;
   max-width: 1351px;
 }
 
 .hero-section__bigPhoneImage_container {
-  z-index: -1;
+  z-index: 1;
   position: relative;
   height: 328px;
 }
@@ -134,7 +134,9 @@ nav .navlinks.animate_navlinks {
   line-height: 23px;
 }
 .hero-section__content-section .hero-section__btn {
-  margin: 5% 0;
+  margin: 3% 0;
+  cursor: pointer;
+  z-index: 90;
 }
 
 @media screen and (min-width: 370px) {
