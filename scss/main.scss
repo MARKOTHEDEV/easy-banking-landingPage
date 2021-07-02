@@ -140,10 +140,14 @@ nav{
     // border: 1px solid green;
     background-color: #fafafa;
     z-index: -1;
-position: relative;
+    position: relative;
+    margin: 0 auto;
+    max-width: 1351px;
 }
 
-
+.hero-section{
+// border: 1px solid rebeccapurple;
+}
 
 .hero-section__bigPhoneImage_container{
     z-index: -1;
@@ -286,7 +290,7 @@ position: relative;
         .hero-section__bigPhoneImage_container{
             height: unset;
             width: 50%;
-            border: 1px solid yellow;
+            // border: 1px solid yellow;
             // overflow-y: hidden;
             .image_of_phone{
                 height: unset;
@@ -322,8 +326,8 @@ position: relative;
             align-self: center;
 
             h1{
-                font-size: 2.4rem;
-
+                font-size: 2.7rem;
+                font-weight: 300;
             }
      
             p{
@@ -331,8 +335,8 @@ position: relative;
                 padding: 0;
                 text-align: left;
                 font-size: .9rem;
-                border: 1px solid red;
-                // width: 70%;
+                // border: 1px solid red;
+                width: 90%;
             }
      
              .hero-section__btn{
