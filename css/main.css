@@ -21,6 +21,11 @@ body {
   font-weight: 400;
   cursor: pointer;
   background: linear-gradient(to right, #31d35c 10%, #31d35c 9%, #2bb7da 70%);
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+.btn-green-gradient:hover {
+  opacity: 0.6;
 }
 
 nav {
@@ -139,6 +144,9 @@ nav .navlinks.animate_navlinks {
   z-index: 90;
 }
 
+.why_choose {
+  background-color: #f3f4f6;
+}
 @media screen and (min-width: 370px) {
   .hero-section__bigPhoneImage_container {
     height: unset;

@@ -33,6 +33,12 @@ body{
         hsl(136, 65%, 51%) 9%,
         hsl(192, 70%, 51%) 70%
     );
+    opacity: 1;
+    transition: opacity .2s ease-in-out;
+    // on hover on the buttons 
+    &:hover{
+        opacity: 0.6;
+    }
 
 }
 
@@ -202,6 +208,17 @@ nav{
        z-index: 90;
     }
 }
+
+.why_choose{
+    // border: 1px solid yellowgreen;
+    background-color: hsl(220, 16%, 96%);
+
+    .why_choose__intro{
+        
+    }
+}
+
+
 // end of the hero section
 @media screen and (min-width:370px) {
     .hero-section__bigPhoneImage_container{
