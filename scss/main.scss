@@ -12,7 +12,7 @@ $darkBlue:hsl(233, 26%, 24%);;
 $LightGrayishBlue: hsl(220, 16%, 96%);
 $VeryLightGray: hsl(0, 0%, 98%);
 $White: hsl(0, 0%, 100%);
-$grayishBlue:hsl(233, 8%, 62%);
+$grayishBlue:#9698a6;
 body{
     position: relative;
     font-family: 'Public Sans', sans-serif;
@@ -149,6 +149,7 @@ nav{
     // z-index: -1;
     position: relative;
     margin: 0 auto;
+    padding-bottom: 15%;
     max-width: 1351px;
 }
 
@@ -209,14 +210,36 @@ nav{
     }
 }
 
+// start of why_choose us
 .why_choose{
     // border: 1px solid yellowgreen;
     background-color: hsl(220, 16%, 96%);
-
+    padding:2rem .6rem;
+    
+    .why_choose_us_content_container{
+        border: 1px solid red;
+        // margin-top: 3%;
+    }
+    .why_choose_heading{
+        color: $darkBlue;
+    }
+    .why_choose_pTag{
+        color: $grayishBlue;
+        line-height: 1.5rem;
+    }
     .why_choose__intro{
-        
+        h2{
+            font-size: 2rem;
+            font-weight: 500;
+            text-align: center;
+        }
+        p{  
+            text-align: center;
+            padding: .8rem 0;
+        }
     }
 }
+// end start of why_choose us
 
 
 // end of the hero section
@@ -307,7 +330,11 @@ nav{
         display: flex;
         flex-direction: row-reverse;
         // border: 1px solid red;
+        // remove the extra padding from the buttom so the phone can overflow
+        padding-bottom: 0;
     
+    
+        
     
         .hero-section__bigPhoneImage_container{
             height: unset;
@@ -368,6 +395,26 @@ nav{
          }
     
     
+    }
+
+    .why_choose{
+        .why_choose__intro{
+           margin-top: 7%;
+            width: 50%;
+            // border: 1px solid yellow;
+            h2{
+                text-align: left;
+            font-weight: 400;
+
+            }p{
+                text-align: left;
+                padding: 1rem 0;
+
+                
+            }
+       }
+
+
     }
 }
 @media screen  and (min-width:1000px){
