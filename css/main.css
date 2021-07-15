@@ -149,9 +149,6 @@ nav .navlinks.animate_navlinks {
   background-color: #f3f4f6;
   padding: 2rem 0.6rem;
 }
-.why_choose .why_choose_us_content_container {
-  border: 1px solid red;
-}
 .why_choose .why_choose_heading {
   color: #2d314d;
 }
@@ -168,10 +165,42 @@ nav .navlinks.animate_navlinks {
   text-align: center;
   padding: 0.8rem 0;
 }
+.why_choose .why_choose___grid .why_choose_box {
+  text-align: center;
+  margin: 15% 0;
+}
+.why_choose .why_choose___grid .why_choose_box img {
+  margin-bottom: 7%;
+  display: inline-block;
+}
+.why_choose .why_choose___grid .why_choose_box h3 {
+  font-weight: 500;
+  text-transform: capitalize;
+  margin: 5% 0;
+}
 
 @media screen and (min-width: 370px) {
   .hero-section__bigPhoneImage_container {
     height: unset;
+  }
+}
+@media screen and (min-width: 400px) {
+  .why_choose___grid .why_choose_box img {
+    margin-bottom: 7%;
+    display: inline-block;
+  }
+  .why_choose___grid .why_choose_box h3 {
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 5% 0;
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 500px) {
+  .why_choose___grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 10px;
   }
 }
 @media screen and (min-width: 500px) {
@@ -287,6 +316,14 @@ nav .navlinks.animate_navlinks {
     text-align: left;
     padding: 1rem 0;
   }
+  .why_choose .why_choose___grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 10px;
+  }
+  .why_choose .why_choose___grid .why_choose_box {
+    text-align: left;
+  }
 }
 @media screen and (min-width: 1000px) {
   nav {
@@ -295,6 +332,19 @@ nav .navlinks.animate_navlinks {
 
   nav .phone-navlinks-cover {
     width: 30%;
+  }
+
+  .why_choose .why_choose_us_content_container {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .why_choose .why_choose___grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 10px;
+  }
+  .why_choose .why_choose_box p {
+    font-size: 0.9rem;
   }
 }
 @media screen and (min-width: 1146px) {
