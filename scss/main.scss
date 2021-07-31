@@ -9,7 +9,7 @@
 
 // variables
 $darkBlue:hsl(233, 26%, 24%);;
-$LightGrayishBlue: hsl(220, 16%, 96%);
+$LightGrayishBlue: hsl(220, 14%, 96%);
 $VeryLightGray: hsl(0, 0%, 98%);
 $White: hsl(0, 0%, 100%);
 $grayishBlue:#9698a6;
@@ -264,6 +264,7 @@ nav{
 // end start of why_choose us
 
 
+// start of hero section
 // end of the hero section
 @media screen and (min-width:370px) {
     .hero-section__bigPhoneImage_container{
@@ -519,6 +520,8 @@ nav{
 
    }
 }
+// end of hero section
+
 // animations 
 
 //this animation animate the objecct by moving it stylishly
