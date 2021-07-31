@@ -270,6 +270,13 @@ nav .navlinks.animate_navlinks {
     height: 800px;
   }
 }
+@media screen and (min-width: 600px) {
+  .list_of_latest_articles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px 30px;
+  }
+}
 @media screen and (min-width: 800px) {
   nav {
     max-width: 1440px;
@@ -373,6 +380,15 @@ nav .navlinks.animate_navlinks {
   .why_choose .why_choose___grid .why_choose_box {
     text-align: left;
   }
+
+  .list_of_latest_articles {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px 10px;
+  }
+
+  .latest_articles h2 {
+    text-align: left;
+  }
 }
 @media screen and (min-width: 1000px) {
   nav {
@@ -394,6 +410,16 @@ nav .navlinks.animate_navlinks {
   }
   .why_choose .why_choose_box p {
     font-size: 0.9rem;
+  }
+
+  .latest_articles_container {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .list_of_latest_articles {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px 20px;
   }
 }
 @media screen and (min-width: 1146px) {
