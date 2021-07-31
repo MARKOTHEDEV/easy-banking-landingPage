@@ -10,13 +10,21 @@
 // variables
 $darkBlue:hsl(233, 26%, 24%);;
 $LightGrayishBlue: hsl(220, 14%, 96%);
-$VeryLightGray: hsl(0, 0%, 98%);
-$White: hsl(0, 0%, 100%);
+$VeryLightGray: #fafafa;
+$White: #ffffff;
 $grayishBlue:#9698a6;
 body{
     position: relative;
     font-family: 'Public Sans', sans-serif;
     overflow-x: hidden;
+}
+
+
+@mixin heading_style {
+        font-size: 2rem;
+            font-weight: 500;
+            text-align: center;
+            color: $darkBlue;
 }
 // utitlity classes start
 .btn-green-gradient{
@@ -262,6 +270,67 @@ nav{
     }
 }
 // end start of why_choose us
+
+// start of latest_articles
+.latest_articles{
+    background-color:$VeryLightGray;
+    padding: 3rem 0.6rem;
+    h2{
+        @include heading_style;
+        font-size: 1.9rem;
+        padding: 2rem 0;
+    }
+
+    .article{
+        // border:1px solid red;
+        margin:5% 0;
+        border-radius:5px ;
+        display: flex;
+        flex-direction: column;
+
+        // style for the imag in each aritclebox
+        img{
+            width: 100%;
+            height: 50%;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            display: block;
+        }
+
+        // article_content start 
+        .article_content{
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            height: 50%;
+            width: 100%;
+            background-color: $White;
+            padding: 1.5rem 2rem; 
+
+            .author{
+                text-align: left;
+                color: #b2b1b7;
+                padding: .8rem 0;
+                font-size: .8rem;
+            }
+            .title{
+                color: $darkBlue;
+                font-size: 1rem;
+                padding: .5rem 0;
+
+            }
+
+            .content_preview{
+                font-size: .9rem;
+                color: $grayishBlue;
+            }
+        }
+        // article_content end 
+
+    }
+
+    
+}
+// end of latest_articles
 
 
 // start of hero section
