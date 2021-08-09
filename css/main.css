@@ -11,6 +11,10 @@ body {
   overflow-x: hidden;
 }
 
+body.hangPage {
+  overflow: hidden;
+}
+
 .btn-green-gradient {
   display: inline-block;
   border: transparent;

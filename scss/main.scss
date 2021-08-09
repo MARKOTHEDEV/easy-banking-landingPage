@@ -19,7 +19,9 @@ body{
     font-family: 'Public Sans', sans-serif;
     overflow-x: hidden;
 }
-
+body.hangPage{
+    overflow: hidden;
+}
 
 @mixin heading_style {
         font-size: 2rem;
