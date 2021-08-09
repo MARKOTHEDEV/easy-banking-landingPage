@@ -340,6 +340,7 @@ footer{
     // border: 1px solid red;
     background-color: #2d314e;
     text-align: center;
+    padding-top: 2.2rem;
 
     .footer_section_a{
         text-align: center;
@@ -362,7 +363,13 @@ footer{
         }
       
         
-       
+       .logo{
+            width: 40%;
+            margin: 0 auto;
+        img{
+            width: 100%;
+        }
+       }
         .socials_links{
             display: flex;
             width: 60%;
