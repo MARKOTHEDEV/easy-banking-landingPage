@@ -299,7 +299,13 @@ nav{
             border-top-right-radius: 5px;
             display: block;
         }
+        &:hover{
+            cursor: pointer;
+        }
 
+        &:hover .article_content .title{
+            color: $limeGreen;
+        }
         // article_content start 
         .article_content{
             border-bottom-left-radius: 5px;

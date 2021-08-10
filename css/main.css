@@ -208,6 +208,12 @@ nav .navlinks.animate_navlinks {
   border-top-right-radius: 5px;
   display: block;
 }
+.latest_articles .article:hover {
+  cursor: pointer;
+}
+.latest_articles .article:hover .article_content .title {
+  color: #31d35c;
+}
 .latest_articles .article .article_content {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
