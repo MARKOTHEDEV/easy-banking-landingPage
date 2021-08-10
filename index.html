@@ -233,34 +233,35 @@
                         <!-- ---------------- -->
                         <div>
                             <div class="logo">
-                                <img src="" alt="">
+                                <img   src="./images/logo (1).svg" alt="Footer Logo">
                             </div>
+           
     
                             <div class="socials_links">
-                                <li><a href=""><img src="" alt=""></a></li>
-                                <li><a href=""><img src="" alt=""></a></li>
-                                <li><a href=""><img src="" alt=""></a></li>
-                                <li><a href=""><img src="" alt=""></a></li>
-                                <li><a href=""><img src="" alt=""></a></li>
+                                <li class="social_icon" ><a href=""><img src="./images/icon-facebook.svg" alt=""></a></li>
+                                <li  class="social_icon"><a href=""><img src="./images/icon-pinterest.svg" alt=""></a></li>
+                                <li  class="social_icon"><a href=""><img src="./images/icon-twitter.svg" alt=""></a></li>
+                                <li  class="social_icon"><a href=""><img src="./images/icon-youtube.svg" alt=""></a></li>
+                                <li  class="social_icon"><a href=""><img src="./images/icon-instagram.svg" alt=""></a></li>
                             </div>
                         </div>
                         <!-- ---------------- -->
 
-                        <div>
-                            <li><a href="">About Us</a></li>
-                            <li><a href="">Contact</a></li>
-                            <li><a href="">Blog</a></li>
+                        <div class="footer-navlink_container_one">
+                            <li class="footer-navlink"><a href="">About Us</a></li>
+                            <li class="footer-navlink"><a href="">Contact</a></li>
+                            <li class="footer-navlink"><a href="">Blog</a></li>
                             
                         </div>
                         <!-- ---------------- -->
                       <!-- ---------------- -->
 
-                      <div>
-                        <li><a href="">Careers</a></li>
-                        <li><a href="">Support</a></li>
-                        <li><a href="">Privacy Policy</a></li>
-                        
-                    </div>
+                        <div class="footer-navlink_container_two">
+                            <li class="footer-navlink"><a href="">Careers</a></li>
+                            <li class="footer-navlink"><a href="">Support</a></li>
+                            <li class="footer-navlink"><a href="">Privacy Policy</a></li>
+                            
+                        </div>
 
                     </div>
                     <!-- end footer_section_a -->
@@ -268,8 +269,8 @@
 
                     <!-- start of footer_section_b -->
                     <div class="footer_section_b">
-                        <button class="btn-green-gradient btn nav-btn">Regiter Invite</button>
-                        <p>@MARKOTHEDEV. All Rights Reserved</p>
+                        <button class="btn-green-gradient btn nav-btn btn-green-gradient-footer">Regiter Invite</button>
+                        <p class="copyWrite">@MARKOTHEDEV. All Rights Reserved</p>
                     </div>
                     <!-- start of footer_section_b -->
 
@@ -285,6 +286,7 @@
             const ham = document.querySelector('.ham')
             const phoneNavlinksCover = document.querySelector('.phone-navlinks-cover')
             const navlinks = document.querySelector('.navlinks')
+            const websiteBody = document.querySelector('body')
             //this line of code get the image in the ham div
             let hamImage = ham.childNodes[0]
             ham.addEventListener('click',e=>{
@@ -296,7 +298,10 @@
                 }else{hamImage.src = './images/icon-hamburger.svg'}
 
                 phoneNavlinksCover.classList.toggle('show')
+                websiteBody.classList.toggle('hangPage')
                 navlinks.classList.toggle('animate_navlinks')
+
+             
             })
         </script>
 </body>
