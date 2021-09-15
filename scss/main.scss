@@ -175,6 +175,12 @@ nav{
     position: relative;
     // border: 1px solid red;
     height: 328px;
+    // the overflow property has the same functionality just different browser
+    // this works only on mozilla
+    overflow-x: -moz-hidden-unscrollable;
+    // this works only on chorme
+    overflow-x: clip;
+    // overflow-x: -moz-hidden-unscrollable;
     // unset this hieght when it get to 382
     
     .img-bg-for-mobile{
@@ -743,6 +749,20 @@ footer{
 
 }
 @media screen  and (min-width:1000px){
+    .hero-section{
+        .hero-section__bigPhoneImage_container{
+            .img-bg-for-desktop{
+        
+                transform: 
+                scale(1.4) translateX(60px) 
+                translateY(-36px);
+                 
+                
+            }
+        }
+        
+    }
+    
 
     footer{
         .footer_section_a{
